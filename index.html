@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+        <title>User Experience Survey Form</title>
+    </head>
+
+    <body>
+        <!--I paid regard to the principles of research methods while preparing this survey.
+        Therefore, in order to achieve valid and reliable measurement, I have preferred undistracting, minimal design.
+        Color hex codes have taken from www.amazon.com -->
+        <header>
+            <h1 class="title" id="title">Mississippi Online Shopping User Experience Survey Form</h1>
+            <h2 class="title">From 0 to 9</h2>
+            <img id="arrow" src="https://i.imgur.com/9KlTAzU.png" alt="arrow">
+        </header>
+        <div id="container">
+            <p id="description">Thank you for your contribution. Your feedback is very important for us.</p>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <br>
+                    <input type="text" id="name" class="form-input" name="name" placeholder="Enter your name" required>
+                </div>
+                <br><br>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <br>
+                    <input type="email" id="email" class="form-input" name="email" placeholder="Enter your Email"
+                        required>
+                </div>
+                <br><br>
+                <div class="form-group">
+                    <label id="number-label" for="number">Age</label>
+                    <br>
+                    <input type="number" id="number" class="form-input" name="age" min="16" max="122"
+                        placeholder="Optional">
+                </div>
+                <br><br>
+                <div>
+                    <label for="role">Which option best describes your current role?</label><br>
+                    <select id="dropdown" class="form-input" name="role" required>
+                        <option value="none" selected disabled hidden>Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full time job</option>
+                        <option value="learner">Full time learner</option>
+                        <option value="prefer-no">Prefer not to state</option>
+                        <option value="other-role">Other</option>
+                    </select>
+                </div>
+                <br><br>
+                <div>
+                    <p>How long have you been using Mississippi?</p>
+                    <input type="radio" id="0-6 months" value="0-6 months" name="how-long" class="input-radio" required>
+                    <label id="radio-0-6 months" for="0-6 months">0-6 months</label>
+                    <br>
+                    <input type="radio" id="6-12 months" value="6-12 months" name="how-long" class="input-radio">
+                    <label id="radio-6-12 months" for="6-12 months">6-12 months</label>
+                    <br>
+                    <input type="radio" id="1-3 years" value="1-3 years" name="how-long" class="input-radio">
+                    <label id="radio-1-3 years" for="1-3 years">1-3 years</label>
+                    <br>
+                    <input type="radio" id="3-5 years" value="3-5 years" name="how-long" class="input-radio">
+                    <label id="radio-3-5 years" for="3-5 years">3-5 years</label>
+                    <br>
+                    <input type="radio" id="5+ years" value="5+ years" name="how-long" class="input-radio">
+                    <label id="radio-5+ years" for="5+ years">5+ years</label>
+                </div>
+                <br><br>
+                <div>
+                    <p>How often do you shop online?</p>
+                    <input type="radio" id="several" value="several" name="how-often" class="input-radio" required>
+                    <label id="radio-several" for="several">Several times a day</label>
+                    <br>
+                    <input type="radio" id="daily" value="daily" name="how-often" class="input-radio">
+                    <label id="radio-daily" for="daily">Daily</label>
+                    <br>
+                    <input type="radio" id="many-times" value="many-times" name="how-often" class="input-radio">
+                    <label id="radio-many-times" for="many-times">Many times a week</label>
+                    <br>
+                    <input type="radio" id="once-week" value="once-week" name="how-often" class="input-radio">
+                    <label id="radio-once-week" for="once-week">Once or twice a week</label>
+                    <br>
+                    <input type="radio" id="once-month" value="once-month" name="how-often" class="input-radio">
+                    <label id="radio-once-month" for="once-month">Once or twice a month</label>
+                    <br>
+                    <input type="radio" id="once-year" value="once-year" name="how-often" class="input-radio">
+                    <label id="radio-once-year" for="once-year">Once or twice a year</label>
+                    <br>
+                    <input type="radio" id="never" value="never" name="how-often" class="input-radio">
+                    <label id="radio-never" for="never">Never</label>
+                </div>
+                <br><br>
+                <div>
+                    <p>Which features are the most important to you?</p>
+                    <input type="checkbox" id="ease-use" value="ease-use" name="most-important" class="input-checkbox">
+                    <label id="box-ease-use" for="ease-use">Ease of use</label>
+                    <br>
+                    <input type="checkbox" id="reliability" value="reliability" name="most-important"
+                        class="input-checkbox">
+                    <label id="box-reliability" for="reliability">Reliability</label>
+                    <br>
+                    <input type="checkbox" id="price" value="price" name="most-important" class="input-checkbox">
+                    <label id="box-price" for="price">Price</label>
+                    <br>
+                    <input type="checkbox" id="shipping" value="shipping" name="most-important" class="input-checkbox">
+                    <label id="box-shipping" for="shipping">Shipping</label>
+                    <br>
+                    <input type="checkbox" id="other" value="other" name="most-important" class="input-checkbox">
+                    <label id="box-other" for="other">Other:</label>
+                    <input type="text" id="other-text" class="form-input input-checkbox" name="most-important">
+                </div>
+                <br><br>
+                <div>
+                    <p>Have you ever used Mississippi Platinum?</p>
+                    <input type="radio" id="yes" value="yes" name="platinum" required>
+                    <label id="radio-yes" for="yes">Yes</label>
+                    <br>
+                    <input type="radio" id="no" value="no" name="platinum">
+                    <label id="radio-no" for="no">No</label>
+                </div>
+                <br><br>
+                <div>
+                    <label for="comments">Do you have any additional comments or feedback for us?</label><br>
+                    <textarea id="comments" class="form-input" name="comments"
+                        placeholder="Enter your comment here"></textarea>
+                </div>
+                <br><br>
+                <div class="form-group">
+                    <input type="submit" id="submit" class="form-input" value="Submit">
+                </div>
+            </form>
+        </div>
+    </body>
+
+</html>

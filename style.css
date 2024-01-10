@@ -1,0 +1,98 @@
+:root {
+    --primary: #444444;
+    --secondary: #EAEDED;
+    --header-gunmetal: #232F3E;
+    --submit-nightgreen: #00464F;
+    --submit-nightgreen-hover: #00606D;
+    --input-bg: #FFFFFF;
+    --input-focus: #0060DF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--secondary);
+    color: var(--primary);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    width: 100%;
+    font-weight: 600;
+}
+
+header {
+    background-color: var(--header-gunmetal);
+    color: var(--secondary);
+    text-align: center;
+    padding: 0.25rem;
+}
+
+#arrow {
+    width: 5rem;
+    position: relative;
+    bottom: 1rem;
+    left: 3.8rem;
+}
+
+#description {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#survey-form {
+    box-shadow: 0 0 0.8rem var(--primary);
+    padding: 4rem;
+    border-radius: 0.2rem;
+}
+
+#submit {
+    background-color: var(--submit-nightgreen);
+    color: var(--secondary);
+    padding: 0.8rem;
+    width: 100%;
+    font-weight: 600;
+    border-radius: 0.2rem;
+}
+
+#submit:hover {
+    background-color: var(--submit-nightgreen-hover);
+    cursor: pointer;
+}
+
+#container {
+    margin: 2rem auto;
+    max-width: 700px;
+}
+
+.form-input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: var(--input-bg);
+    padding: 0.6rem;
+    width: 100%;
+    border: 0 solid var(--secondary);
+}
+
+.form-input:focus {
+    box-shadow: 0 0 0.2rem 0.2rem var(--input-focus);
+    outline: 0;
+}
+
+#comments {
+    height: 10rem;
+}
